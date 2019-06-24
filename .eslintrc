@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-var": "warn"
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "sourceType": "module"
+  }
+}

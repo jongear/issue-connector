@@ -1,0 +1,54 @@
+{
+  "name": "issue-connector",
+  "version": "1.0.0",
+  "description": "Connect issues to Pull Requests based off feature branch naming conventions",
+  "author": "Jon Gear <askjon@jongear.io>",
+  "license": "ISC",
+  "repository": "https://github.com/jongear/issue-connector.git",
+  "homepage": "https://github.com/jongear/issue-connector",
+  "bugs": "https://github.com/jongear/issue-connector/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "probot run ./index.js",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "probot": "^7.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.0.0",
+    "nock": "^10.0.0",
+    "nodemon": "^1.17.2",
+    "prettier": "^1.18.2",
+    "smee-client": "^1.0.2"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "nodemonConfig": {
+    "exec": "npm start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
