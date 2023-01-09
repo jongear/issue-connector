@@ -22,7 +22,7 @@
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
-    "probot": "^7.2.0"
+    "probot": "^12.2.8"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
